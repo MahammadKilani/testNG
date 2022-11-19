@@ -1,4 +1,4 @@
-<!-- Runner, needed to be able to run CI/CD model -->
+<!-- Runner, needed to be able to run CI/CD model for Maven CLI -->
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="OneTestSuite" verbose="1" >
