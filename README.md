@@ -45,7 +45,7 @@
 <br> <i>scoop install allure</i>
 </li>
 <br>
-<li> Then simply run Allure sever with the target of allure-results folder of your project
+<li> Then simply run Allure server with the target of allure-results folder of your project
 <br> <i>allure serve C:\location-to-your-project-where-pom.xml-is-found\allure-results</i>
 </li>
 </ul>
