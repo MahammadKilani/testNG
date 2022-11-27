@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import static Utils.Setup.searchPage;
 import static Utils.Setup.webDriver;
 
-public class Tests {
+public class Steps {
 
     // Go to Google
     public void openSearchPage() {

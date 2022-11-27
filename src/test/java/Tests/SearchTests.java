@@ -1,11 +1,10 @@
 package Tests;
 
-import Methods.Assertions;
 import Utils.Setup;
 import org.testng.annotations.Test;
 
 // any test class should extend setup class, to be able to see @BeforeTest and @AfterTest from another package
-public class SearchTests extends Setup {
+public class SearchTests extends Setup{
 
     // To make data driven testing we provide a Data Provider class
     // In this example for better arranging the Data Provider class in another package
@@ -13,9 +12,9 @@ public class SearchTests extends Setup {
     @Test(dataProviderClass = Utils.DataProviders.class, dataProvider = "searchTermsProvider")
     public void search(String term) {
         //Test steps
-        tests.openSearchPage();
-        tests.input(term);
-        tests.hitEnter();
+        steps.openSearchPage();
+        steps.input(term);
+        steps.hitEnter();
         // Assertions
         assertions.resultsAssertion(term);
     }

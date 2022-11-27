@@ -1,7 +1,7 @@
 package Utils;
 
 import Methods.Assertions;
-import Methods.Tests;
+import Methods.Steps;
 import Pages.ResultsPage;
 import Pages.SearchPage;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +15,7 @@ public class Setup {
 
     // Static objects which will save a lot of memory
     public static WebDriver webDriver;
-    public static Tests tests;
+    public static Steps steps;
     public static SearchPage searchPage;
     public static ResultsPage resultsPage;
     public static SoftAssert softAssert;
@@ -34,7 +34,7 @@ public class Setup {
         webDriver = new ChromeDriver(options);
         searchPage = new SearchPage();
         resultsPage = new ResultsPage();
-        tests = new Tests();
+        steps = new Steps();
         softAssert = new SoftAssert();
         assertions = new Assertions();
     }
@@ -44,5 +44,4 @@ public class Setup {
     public static void Teardown() {
         webDriver.quit();
     }
-
 }
